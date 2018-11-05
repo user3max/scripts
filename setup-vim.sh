@@ -2,7 +2,10 @@
 
 function setup_vimrc() {
 	touch ~/.vimrc
-	echo -n "set number" >> ~/.vimrc
+	
+	echo "set number" >> ~/.vimrc
+	echo -e "set mouse=a" >> ~/.vimrc
+	
 	sed '1d' ~/.vimrc
 }
 
